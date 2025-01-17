@@ -1,5 +1,8 @@
 # Steps for configuring ThingsBoard and programming ESP32
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Smart-Blueprints/esp32-and-thingsboard-setup-guide/blob/main/lessons/thingsboard%20setup%20for%20esp32/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/Smart-Blueprints/esp32-and-thingsboard-setup-guide/blob/main/lessons/thingsboard%20setup%20for%20esp32/README.es.md)
+
 ## 1. Create a free ThingsBoard account
 
 - **Create a temporary email**:
