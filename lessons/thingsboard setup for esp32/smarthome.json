@@ -1,0 +1,1176 @@
+{
+  "title": "SmartHome",
+  "image": null,
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "description": "",
+    "widgets": {
+      "7db44bc3-425b-3adc-d620-ed16a9c182cf": {
+        "typeFullFqn": "system.simple_value_and_chart_card",
+        "type": "timeseries",
+        "sizeX": 4.5,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "b8a9ac50-ee17-11ee-9a30-a12f0dc2368b",
+              "dataKeys": [
+                {
+                  "name": "Gas",
+                  "type": "timeseries",
+                  "label": "Gas",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.2479150956949101
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": [
+                {
+                  "name": "Gas",
+                  "type": "timeseries",
+                  "label": "Latest",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.2479150956949101,
+                  "units": null,
+                  "decimals": null
+                }
+              ]
+            }
+          ],
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": null,
+          "padding": "0",
+          "settings": {
+            "layout": "left",
+            "autoScale": true,
+            "showValue": true,
+            "valueFont": {
+              "family": "Roboto",
+              "size": 28,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500",
+              "lineHeight": "32px"
+            },
+            "valueColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "background": {
+              "type": "color",
+              "color": "#fff",
+              "overlay": {
+                "enabled": false,
+                "color": "rgba(255,255,255,0.72)",
+                "blur": 3
+              }
+            }
+          },
+          "title": "Gas",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": null,
+          "configMode": "basic",
+          "actions": {},
+          "showTitleIcon": false,
+          "titleIcon": "thermostat",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "titleFont": {
+            "size": 16,
+            "sizeUnit": "px",
+            "family": "Roboto",
+            "weight": "500",
+            "style": "normal",
+            "lineHeight": "24px"
+          },
+          "iconSize": "18px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "decimals": 0,
+          "titleColor": "rgba(0, 0, 0, 0.87)",
+          "borderRadius": null,
+          "units": null,
+          "displayTimewindow": true,
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 1,
+            "history": {
+              "historyType": 2,
+              "timewindowMs": 60000,
+              "interval": 43200000,
+              "fixedTimewindow": {
+                "startTimeMs": 1697382151041,
+                "endTimeMs": 1697468551041
+              },
+              "quickInterval": "CURRENT_MONTH_SO_FAR"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "timewindowStyle": {
+            "showIcon": false,
+            "iconSize": "24px",
+            "icon": "query_builder",
+            "iconPosition": "left",
+            "font": {
+              "size": 12,
+              "sizeUnit": "px",
+              "family": "Roboto",
+              "weight": "400",
+              "style": "normal",
+              "lineHeight": "16px"
+            },
+            "color": "rgba(0, 0, 0, 0.38)",
+            "displayTypePrefix": true
+          },
+          "enableDataExport": false
+        },
+        "row": 0,
+        "col": 0,
+        "id": "7db44bc3-425b-3adc-d620-ed16a9c182cf"
+      },
+      "b8b0219d-8097-7c39-5bbe-93e28d5a7497": {
+        "typeFullFqn": "system.simple_value_and_chart_card",
+        "type": "timeseries",
+        "sizeX": 4.5,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "b8a9ac50-ee17-11ee-9a30-a12f0dc2368b",
+              "dataKeys": [
+                {
+                  "name": "Light",
+                  "type": "timeseries",
+                  "label": "Light",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.89527247665329
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": [
+                {
+                  "name": "Light",
+                  "type": "timeseries",
+                  "label": "Latest",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.89527247665329,
+                  "units": null,
+                  "decimals": null
+                }
+              ]
+            }
+          ],
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": null,
+          "padding": "0",
+          "settings": {
+            "layout": "left",
+            "autoScale": true,
+            "showValue": true,
+            "valueFont": {
+              "family": "Roboto",
+              "size": 28,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500",
+              "lineHeight": "32px"
+            },
+            "valueColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "background": {
+              "type": "color",
+              "color": "#fff",
+              "overlay": {
+                "enabled": false,
+                "color": "rgba(255,255,255,0.72)",
+                "blur": 3
+              }
+            }
+          },
+          "title": "Light",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": null,
+          "configMode": "basic",
+          "actions": {},
+          "showTitleIcon": false,
+          "titleIcon": "thermostat",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "titleFont": {
+            "size": 16,
+            "sizeUnit": "px",
+            "family": "Roboto",
+            "weight": "500",
+            "style": "normal",
+            "lineHeight": "24px"
+          },
+          "iconSize": "18px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "decimals": 0,
+          "titleColor": "rgba(0, 0, 0, 0.87)",
+          "borderRadius": null,
+          "units": null,
+          "displayTimewindow": true,
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 1,
+            "history": {
+              "historyType": 2,
+              "timewindowMs": 60000,
+              "interval": 43200000,
+              "fixedTimewindow": {
+                "startTimeMs": 1697382151041,
+                "endTimeMs": 1697468551041
+              },
+              "quickInterval": "CURRENT_MONTH_SO_FAR"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "timewindowStyle": {
+            "showIcon": false,
+            "iconSize": "24px",
+            "icon": "query_builder",
+            "iconPosition": "left",
+            "font": {
+              "size": 12,
+              "sizeUnit": "px",
+              "family": "Roboto",
+              "weight": "400",
+              "style": "normal",
+              "lineHeight": "16px"
+            },
+            "color": "rgba(0, 0, 0, 0.38)",
+            "displayTypePrefix": true
+          },
+          "enableDataExport": false
+        },
+        "row": 0,
+        "col": 0,
+        "id": "b8b0219d-8097-7c39-5bbe-93e28d5a7497"
+      },
+      "6a14b1fe-c784-50c7-af71-956d70732332": {
+        "typeFullFqn": "system.simple_value_and_chart_card",
+        "type": "timeseries",
+        "sizeX": 4.5,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "b8a9ac50-ee17-11ee-9a30-a12f0dc2368b",
+              "dataKeys": [
+                {
+                  "name": "Motion",
+                  "type": "timeseries",
+                  "label": "Motion",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.41151531551817144
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": [
+                {
+                  "name": "Motion",
+                  "type": "timeseries",
+                  "label": "Latest",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.41151531551817144,
+                  "units": null,
+                  "decimals": null
+                }
+              ]
+            }
+          ],
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": null,
+          "padding": "0",
+          "settings": {
+            "layout": "left",
+            "autoScale": true,
+            "showValue": true,
+            "valueFont": {
+              "family": "Roboto",
+              "size": 28,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500",
+              "lineHeight": "32px"
+            },
+            "valueColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "background": {
+              "type": "color",
+              "color": "#fff",
+              "overlay": {
+                "enabled": false,
+                "color": "rgba(255,255,255,0.72)",
+                "blur": 3
+              }
+            }
+          },
+          "title": "Motion",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": null,
+          "configMode": "basic",
+          "actions": {},
+          "showTitleIcon": false,
+          "titleIcon": "thermostat",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "titleFont": {
+            "size": 16,
+            "sizeUnit": "px",
+            "family": "Roboto",
+            "weight": "500",
+            "style": "normal",
+            "lineHeight": "24px"
+          },
+          "iconSize": "18px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "decimals": 0,
+          "titleColor": "rgba(0, 0, 0, 0.87)",
+          "borderRadius": null,
+          "units": null,
+          "displayTimewindow": true,
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 1,
+            "history": {
+              "historyType": 2,
+              "timewindowMs": 60000,
+              "interval": 43200000,
+              "fixedTimewindow": {
+                "startTimeMs": 1697382151041,
+                "endTimeMs": 1697468551041
+              },
+              "quickInterval": "CURRENT_MONTH_SO_FAR"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "timewindowStyle": {
+            "showIcon": false,
+            "iconSize": "24px",
+            "icon": "query_builder",
+            "iconPosition": "left",
+            "font": {
+              "size": 12,
+              "sizeUnit": "px",
+              "family": "Roboto",
+              "weight": "400",
+              "style": "normal",
+              "lineHeight": "16px"
+            },
+            "color": "rgba(0, 0, 0, 0.38)",
+            "displayTypePrefix": true
+          },
+          "enableDataExport": false
+        },
+        "row": 0,
+        "col": 0,
+        "id": "6a14b1fe-c784-50c7-af71-956d70732332"
+      },
+      "be08d03a-b508-22f2-902a-a43a602cb084": {
+        "typeFullFqn": "system.simple_value_and_chart_card",
+        "type": "timeseries",
+        "sizeX": 4.5,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "b8a9ac50-ee17-11ee-9a30-a12f0dc2368b",
+              "dataKeys": [
+                {
+                  "name": "Rain",
+                  "type": "timeseries",
+                  "label": "Rain",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.7267933969346354
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": [
+                {
+                  "name": "Rain",
+                  "type": "timeseries",
+                  "label": "Latest",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.7267933969346354,
+                  "units": null,
+                  "decimals": null
+                }
+              ]
+            }
+          ],
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": null,
+          "padding": "0",
+          "settings": {
+            "layout": "left",
+            "autoScale": true,
+            "showValue": true,
+            "valueFont": {
+              "family": "Roboto",
+              "size": 28,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500",
+              "lineHeight": "32px"
+            },
+            "valueColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "background": {
+              "type": "color",
+              "color": "#fff",
+              "overlay": {
+                "enabled": false,
+                "color": "rgba(255,255,255,0.72)",
+                "blur": 3
+              }
+            }
+          },
+          "title": "Rain",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": null,
+          "configMode": "basic",
+          "actions": {},
+          "showTitleIcon": false,
+          "titleIcon": "thermostat",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "titleFont": {
+            "size": 16,
+            "sizeUnit": "px",
+            "family": "Roboto",
+            "weight": "500",
+            "style": "normal",
+            "lineHeight": "24px"
+          },
+          "iconSize": "18px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "decimals": 0,
+          "titleColor": "rgba(0, 0, 0, 0.87)",
+          "borderRadius": null,
+          "units": null,
+          "displayTimewindow": true,
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 1,
+            "history": {
+              "historyType": 2,
+              "timewindowMs": 60000,
+              "interval": 43200000,
+              "fixedTimewindow": {
+                "startTimeMs": 1697382151041,
+                "endTimeMs": 1697468551041
+              },
+              "quickInterval": "CURRENT_MONTH_SO_FAR"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "timewindowStyle": {
+            "showIcon": false,
+            "iconSize": "24px",
+            "icon": "query_builder",
+            "iconPosition": "left",
+            "font": {
+              "size": 12,
+              "sizeUnit": "px",
+              "family": "Roboto",
+              "weight": "400",
+              "style": "normal",
+              "lineHeight": "16px"
+            },
+            "color": "rgba(0, 0, 0, 0.38)",
+            "displayTypePrefix": true
+          },
+          "enableDataExport": false
+        },
+        "row": 0,
+        "col": 0,
+        "id": "be08d03a-b508-22f2-902a-a43a602cb084"
+      },
+      "33d27bae-6853-7a19-7caa-a98eb4b2d8c7": {
+        "typeFullFqn": "system.simple_value_and_chart_card",
+        "type": "timeseries",
+        "sizeX": 4.5,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "b8a9ac50-ee17-11ee-9a30-a12f0dc2368b",
+              "dataKeys": [
+                {
+                  "name": "Soil",
+                  "type": "timeseries",
+                  "label": "Soil",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.062091658641310055
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": [
+                {
+                  "name": "Soil",
+                  "type": "timeseries",
+                  "label": "Latest",
+                  "color": "var(--tb-primary-500)",
+                  "settings": {},
+                  "_hash": 0.062091658641310055,
+                  "units": null,
+                  "decimals": null
+                }
+              ]
+            }
+          ],
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": null,
+          "padding": "0",
+          "settings": {
+            "layout": "left",
+            "autoScale": true,
+            "showValue": true,
+            "valueFont": {
+              "family": "Roboto",
+              "size": 28,
+              "sizeUnit": "px",
+              "style": "normal",
+              "weight": "500",
+              "lineHeight": "32px"
+            },
+            "valueColor": {
+              "type": "constant",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "colorFunction": "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+            },
+            "background": {
+              "type": "color",
+              "color": "#fff",
+              "overlay": {
+                "enabled": false,
+                "color": "rgba(255,255,255,0.72)",
+                "blur": 3
+              }
+            }
+          },
+          "title": "Soil Humidity",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": null,
+          "configMode": "basic",
+          "actions": {},
+          "showTitleIcon": false,
+          "titleIcon": "thermostat",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "titleFont": {
+            "size": 16,
+            "sizeUnit": "px",
+            "family": "Roboto",
+            "weight": "500",
+            "style": "normal",
+            "lineHeight": "24px"
+          },
+          "iconSize": "18px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "decimals": 0,
+          "titleColor": "rgba(0, 0, 0, 0.87)",
+          "borderRadius": null,
+          "units": null,
+          "displayTimewindow": true,
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 1,
+            "history": {
+              "historyType": 2,
+              "timewindowMs": 60000,
+              "interval": 43200000,
+              "fixedTimewindow": {
+                "startTimeMs": 1697382151041,
+                "endTimeMs": 1697468551041
+              },
+              "quickInterval": "CURRENT_MONTH_SO_FAR"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "timewindowStyle": {
+            "showIcon": false,
+            "iconSize": "24px",
+            "icon": "query_builder",
+            "iconPosition": "left",
+            "font": {
+              "size": 12,
+              "sizeUnit": "px",
+              "family": "Roboto",
+              "weight": "400",
+              "style": "normal",
+              "lineHeight": "16px"
+            },
+            "color": "rgba(0, 0, 0, 0.38)",
+            "displayTypePrefix": true
+          },
+          "enableDataExport": false
+        },
+        "row": 0,
+        "col": 0,
+        "id": "33d27bae-6853-7a19-7caa-a98eb4b2d8c7"
+      },
+      "d2269388-4934-b436-9b10-fbea189afaf2": {
+        "typeFullFqn": "system.input_widgets.update_multiple_attributes",
+        "type": "latest",
+        "sizeX": 7.5,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "b8a9ac50-ee17-11ee-9a30-a12f0dc2368b",
+              "dataKeys": [
+                {
+                  "name": "whiteLedState",
+                  "type": "attribute",
+                  "label": "White Led State",
+                  "color": "#2196f3",
+                  "settings": {
+                    "dataKeyHidden": false,
+                    "dataKeyType": "shared",
+                    "dataKeyValueType": "booleanSwitch",
+                    "required": false,
+                    "isEditable": "editable",
+                    "disabledOnDataKey": "",
+                    "appearance": "outline",
+                    "subscriptSizing": "fixed",
+                    "slideToggleLabelPosition": "after",
+                    "selectOptions": [],
+                    "step": 1,
+                    "minValue": null,
+                    "maxValue": null,
+                    "requiredErrorMessage": "",
+                    "minValueErrorMessage": "",
+                    "maxValueErrorMessage": "",
+                    "invalidDateErrorMessage": "",
+                    "invalidJsonErrorMessage": "",
+                    "dialogTitle": "",
+                    "saveButtonLabel": "",
+                    "cancelButtonLabel": "",
+                    "useCustomIcon": false,
+                    "icon": "",
+                    "customIcon": "",
+                    "useGetValueFunction": false,
+                    "getValueFunctionBody": "",
+                    "useSetValueFunction": false,
+                    "setValueFunctionBody": ""
+                  },
+                  "_hash": 0.8925533053260373,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "yellowLedState",
+                  "type": "attribute",
+                  "label": "Yellow Led State",
+                  "color": "#F5DD00",
+                  "settings": {
+                    "dataKeyHidden": false,
+                    "dataKeyType": "shared",
+                    "dataKeyValueType": "booleanSwitch",
+                    "required": false,
+                    "isEditable": "editable",
+                    "disabledOnDataKey": "",
+                    "appearance": "outline",
+                    "subscriptSizing": "fixed",
+                    "slideToggleLabelPosition": "after",
+                    "selectOptions": [],
+                    "step": 1,
+                    "minValue": null,
+                    "maxValue": null,
+                    "requiredErrorMessage": "",
+                    "minValueErrorMessage": "",
+                    "maxValueErrorMessage": "",
+                    "invalidDateErrorMessage": "",
+                    "invalidJsonErrorMessage": "",
+                    "dialogTitle": "",
+                    "saveButtonLabel": "",
+                    "cancelButtonLabel": "",
+                    "useCustomIcon": false,
+                    "icon": "",
+                    "customIcon": "",
+                    "useGetValueFunction": false,
+                    "getValueFunctionBody": "",
+                    "useSetValueFunction": false,
+                    "setValueFunctionBody": ""
+                  },
+                  "_hash": 0.09399855531087709,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "fanState",
+                  "type": "attribute",
+                  "label": "Fan State",
+                  "color": "#f44336",
+                  "settings": {
+                    "dataKeyHidden": false,
+                    "dataKeyType": "shared",
+                    "dataKeyValueType": "booleanSwitch",
+                    "required": false,
+                    "isEditable": "editable",
+                    "disabledOnDataKey": "",
+                    "appearance": "outline",
+                    "subscriptSizing": "fixed",
+                    "slideToggleLabelPosition": "after",
+                    "selectOptions": [],
+                    "step": 1,
+                    "minValue": null,
+                    "maxValue": null,
+                    "requiredErrorMessage": "",
+                    "minValueErrorMessage": "",
+                    "maxValueErrorMessage": "",
+                    "invalidDateErrorMessage": "",
+                    "invalidJsonErrorMessage": "",
+                    "dialogTitle": "",
+                    "saveButtonLabel": "",
+                    "cancelButtonLabel": "",
+                    "useCustomIcon": false,
+                    "icon": "",
+                    "customIcon": "",
+                    "useGetValueFunction": false,
+                    "getValueFunctionBody": "",
+                    "useSetValueFunction": false,
+                    "setValueFunctionBody": ""
+                  },
+                  "_hash": 0.337713527572185,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "relayState",
+                  "type": "attribute",
+                  "label": "Relay State",
+                  "color": "#ffc107",
+                  "settings": {
+                    "dataKeyHidden": false,
+                    "dataKeyType": "shared",
+                    "dataKeyValueType": "booleanSwitch",
+                    "required": false,
+                    "isEditable": "editable",
+                    "disabledOnDataKey": "",
+                    "appearance": "outline",
+                    "subscriptSizing": "fixed",
+                    "slideToggleLabelPosition": "after",
+                    "selectOptions": [],
+                    "step": 1,
+                    "minValue": null,
+                    "maxValue": null,
+                    "requiredErrorMessage": "",
+                    "minValueErrorMessage": "",
+                    "maxValueErrorMessage": "",
+                    "invalidDateErrorMessage": "",
+                    "invalidJsonErrorMessage": "",
+                    "dialogTitle": "",
+                    "saveButtonLabel": "",
+                    "cancelButtonLabel": "",
+                    "useCustomIcon": false,
+                    "icon": "",
+                    "customIcon": "",
+                    "useGetValueFunction": false,
+                    "getValueFunctionBody": "",
+                    "useSetValueFunction": false,
+                    "setValueFunctionBody": ""
+                  },
+                  "_hash": 0.3861309064230547,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "servoDoorState",
+                  "type": "attribute",
+                  "label": "Servo Door State",
+                  "color": "#607d8b",
+                  "settings": {
+                    "dataKeyHidden": false,
+                    "dataKeyType": "shared",
+                    "dataKeyValueType": "booleanSwitch",
+                    "required": false,
+                    "isEditable": "editable",
+                    "disabledOnDataKey": "",
+                    "appearance": "outline",
+                    "subscriptSizing": "fixed",
+                    "slideToggleLabelPosition": "after",
+                    "selectOptions": [],
+                    "step": 1,
+                    "minValue": null,
+                    "maxValue": null,
+                    "requiredErrorMessage": "",
+                    "minValueErrorMessage": "",
+                    "maxValueErrorMessage": "",
+                    "invalidDateErrorMessage": "",
+                    "invalidJsonErrorMessage": "",
+                    "dialogTitle": "",
+                    "saveButtonLabel": "",
+                    "cancelButtonLabel": "",
+                    "useCustomIcon": false,
+                    "icon": "",
+                    "customIcon": "",
+                    "useGetValueFunction": false,
+                    "getValueFunctionBody": "",
+                    "useSetValueFunction": false,
+                    "setValueFunctionBody": ""
+                  },
+                  "_hash": 0.8439441030803443,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "servoWindowState",
+                  "type": "attribute",
+                  "label": "Servo Window State",
+                  "color": "#9c27b0",
+                  "settings": {
+                    "dataKeyHidden": false,
+                    "dataKeyType": "shared",
+                    "dataKeyValueType": "booleanSwitch",
+                    "required": false,
+                    "isEditable": "editable",
+                    "disabledOnDataKey": "",
+                    "appearance": "outline",
+                    "subscriptSizing": "fixed",
+                    "slideToggleLabelPosition": "after",
+                    "selectOptions": [],
+                    "step": 1,
+                    "minValue": null,
+                    "maxValue": null,
+                    "requiredErrorMessage": "",
+                    "minValueErrorMessage": "",
+                    "maxValueErrorMessage": "",
+                    "invalidDateErrorMessage": "",
+                    "invalidJsonErrorMessage": "",
+                    "dialogTitle": "",
+                    "saveButtonLabel": "",
+                    "cancelButtonLabel": "",
+                    "useCustomIcon": false,
+                    "icon": "",
+                    "customIcon": "",
+                    "useGetValueFunction": false,
+                    "getValueFunctionBody": "",
+                    "useSetValueFunction": false,
+                    "setValueFunctionBody": ""
+                  },
+                  "_hash": 0.4261195642147526,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1711700883200,
+                "endTimeMs": 1711787283200
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "widgetTitle": "Control Board",
+            "showResultMessage": true,
+            "showActionButtons": false,
+            "updateAllValues": false,
+            "saveButtonLabel": "",
+            "resetButtonLabel": "",
+            "showGroupTitle": false,
+            "groupTitle": "${entityName}",
+            "fieldsAlignment": "row",
+            "fieldsInRow": 4,
+            "rowGap": 2,
+            "columnGap": 5
+          },
+          "title": "Update Multiple Attributes",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "enableDataExport": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "displayTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "Control Board"
+        },
+        "row": 0,
+        "col": 0,
+        "id": "d2269388-4934-b436-9b10-fbea189afaf2"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "SmartHome",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "7db44bc3-425b-3adc-d620-ed16a9c182cf": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 0,
+                "col": 0
+              },
+              "b8b0219d-8097-7c39-5bbe-93e28d5a7497": {
+                "sizeX": 9,
+                "sizeY": 5,
+                "row": 0,
+                "col": 8
+              },
+              "6a14b1fe-c784-50c7-af71-956d70732332": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 0,
+                "col": 17
+              },
+              "be08d03a-b508-22f2-902a-a43a602cb084": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 5,
+                "col": 17
+              },
+              "33d27bae-6853-7a19-7caa-a98eb4b2d8c7": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 5,
+                "col": 0
+              },
+              "d2269388-4934-b436-9b10-fbea189afaf2": {
+                "sizeX": 9,
+                "sizeY": 5,
+                "row": 5,
+                "col": 8
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {},
+    "filters": {},
+    "timewindow": {
+      "displayValue": "",
+      "hideInterval": false,
+      "hideLastInterval": false,
+      "hideQuickInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "hideTimezone": false,
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "quickInterval": "CURRENT_DAY"
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1711663569844,
+          "endTimeMs": 1711749969844
+        },
+        "quickInterval": "CURRENT_DAY"
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 25000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "name": "SmartHome"
+}
