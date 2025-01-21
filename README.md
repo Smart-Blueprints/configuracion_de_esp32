@@ -1,8 +1,11 @@
-# 🚀 ESP32 Configuration Guide with ThingsBoard 🌐
+# ESP32 Configuration Guide with ThingsBoard
 
-Welcome to the **ESP32 Configuration Guide with ThingsBoard** repository! This repository contains all the resources and step-by-step instructions you need to configure and program the ESP32 microcontroller to work seamlessly with the **ThingsBoard** platform. 🎉
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Smart-Blueprints/esp32-and-thingsboard-setup-guide/blob/main/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/Smart-Blueprints/esp32-and-thingsboard-setup-guide/blob/main/README.es.md)
 
-## 📄 Table of Contents
+Welcome to the **ESP32 Configuration Guide with ThingsBoard** repository! This repository contains all the resources and step-by-step instructions you need to configure and program the ESP32 microcontroller to work seamlessly with the **ThingsBoard** platform. 
+
+## Table of Contents
 
 1. [About This Guide](#about-this-guide)
 2. [Class Materials](https://github.com/Smart-Blueprints/esp32-and-thingsboard-setup-guide/tree/main/lessons)
@@ -14,7 +17,7 @@ Welcome to the **ESP32 Configuration Guide with ThingsBoard** repository! This r
 
 ---
 
-## 📚 About This Guide
+## About This Guide
 
 This guide is designed to help you configure and program the ESP32 microcontroller for IoT applications. With this guide, you'll:
 
@@ -26,17 +29,17 @@ This guide is designed to help you configure and program the ESP32 microcontroll
 ---
 
 
-## 🌐 Resources and Links
+##  Resources and Links
 
-📘 Additional materials and step-by-step guides can be found here:
+Additional materials and step-by-step guides can be found here:
 
 - [ThingsBoard Documentation](https://thingsboard.io/docs/)
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
-We welcome contributions! To contribute, please:
+We welcome contributions 🤝! To contribute, please:
 
 1. Fork this repository.
 2. Create a new branch: `git checkout -b my-feature`.
@@ -46,9 +49,9 @@ We welcome contributions! To contribute, please:
 
 ---
 
-## 📜 License
+## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License 📜 . See the [LICENSE](LICENSE) file for details.
 
 ---
 
